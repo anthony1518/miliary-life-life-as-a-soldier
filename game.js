@@ -42,7 +42,7 @@ const wars = [
   "MajorEvents": ["Invasion of Iraq", "Battle of Fallujah", "Capture of Saddam Hussein"]
 }
 ]
-   console.log(wars)
+
 
 const roles = ["Infantry", "Cavalry", "Artillery", "Scout", "Engineer"]
 
