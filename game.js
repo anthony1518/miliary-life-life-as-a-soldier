@@ -3,42 +3,42 @@ const wars = [
   "StartYear": "334",
   "EndYear": "330",
   "Name": "Invasion of Persia",
-  "Armies": ["Macedonian Army", "Persian Army"],
+  "Army": ["Macedonian Army", "Persian Army"],
   "MajorEvents": ["Battle of Granicus", "Battle of Issus", "Siege of Tyre", "Battle of Gaugamela", "Pursuit of Darius III"]
 },
 {
   "StartYear": "1337",
   "EndYear": "1453",
   "Name": "Hundred Years War",
-  "Armies": ["English Army", "French Army"],
+  "Army": ["English Army", "French Army"],
   "MajorEvents": ["Battle of Crécy", "Battle of Poitiers", "Battle of Agincourt", "Siege of Orléans", "Battle of Castillon"]
 },
 {
   "StartYear": "1803",
   "EndYear": "1815",
   "Name": "Napoleonic Wars",
-  "Armies": ["French Grande Armée", "Coalition Forces"],
+  "Army": ["French Grande Armée", "Coalition Forces"],
   "MajorEvents": ["Battle of Marengo", "Battle of Austerlitz", "Battle of Jena", "Battle of Waterloo"]
 },
 {
   "StartYear": "1861",
   "EndYear": "1865",
   "Name": "American Civil War",
-  "Armies": ["Union Army", "Confederate Army"],
+  "Army": ["Union Army", "Confederate Army"],
   "MajorEvents": ["Battle of Gettysburg", "Battle of Vicksburg", "Siege of Petersburg"]
 },
 {
   "StartYear": "1939",
   "EndYear": "1945",
   "Name": "World War 2",
-  "Armies": ["Allied Forces", "Axis Powers"],
+  "Army": ["Allied Forces", "Axis Powers"],
   "MajorEvents": ["Invasion of Poland", "Battle of Britain", "D-Day Landing", "Battle of Stalingrad"]
 },
 {
   "StartYear": "2003",
   "EndYear": "2011",
   "Name": "Iraq War",
-  "Armies": ["US Army", "Iraq insurgents"],
+  "Army": ["US Army", "Iraq insurgents"],
   "MajorEvents": ["Invasion of Iraq", "Battle of Fallujah", "Capture of Saddam Hussein"]
 }
 ]
@@ -76,23 +76,23 @@ const war = wars[Math.floor(Math.random() * wars.length)]
 const role = roles[Math.floor(Math.random() * roles.length)]
 let namePool = names
 
-if (war.army === "Macedonian Army") {
+if (war.Army === "Macedonian Army") {
     namePool = macedonianNames
-} else if (war.army === "Persian Army") {
+} else if (war.Army === "Persian Army") {
     namePool = persianNames 
-}  else if (war.army === "English Army") {
+}  else if (war.Army === "English Army") {
     namePool = Englandnames
-} else if (war.army === "French Grande Armée") {
+} else if (war.Army === "French Grande Armée") {
     namePool = Frenchnames
-}   else if (war.army === "Union Army") {
+}   else if (war.Army === "Union Army") {
     namePool = USUnionnames
-} else if (war.army === "Confederate Army") {
+} else if (war.Army === "Confederate Army") {
     namePool = USASouthernnames
-} else if (war.army === "US Army") {
+} else if (war.Army === "US Army") {
     namePool = USAnames
-} else if (war.army === "German Army") {
+} else if (war.Army === "German Army") {
     namePool = Germanames
-} else if (war.army === "Iraq insurgents") {
+} else if (war.Army === "Iraq insurgents") {
     namePool = Iraqnames
 }
 // soldier
