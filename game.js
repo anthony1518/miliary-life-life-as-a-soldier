@@ -109,8 +109,8 @@ const soldier = {
 
 document.getElementById("game").innerHTML = `
     <h2>${soldier.name}</h2>
-    <p>${era.year} — ${era.conflict}</p>
-    <p>Army: ${era.army}</p>
+    <p>${wars.year} — ${wars.conflict}</p>
+    <p>Army: ${wars.army}</p>
     <p>Role: ${soldier.role}</p>
     <hr>
     <p>Health: ${soldier.health}</p>
