@@ -1,42 +1,42 @@
 const wars = [
  {
-  "StartYear": 334,
-  "EndYear": 330,
+  "StartYear": "334",
+  "EndYear": "330",
   "Name": "Invasion of Persia",
   "Armies": ["Macedonian Army", "Persian Army"],
   "MajorEvents": ["Battle of Granicus", "Battle of Issus", "Siege of Tyre", "Battle of Gaugamela", "Pursuit of Darius III"]
 },
 {
-  "StartYear": 1337,
-  "EndYear": 1453,
+  "StartYear": "1337",
+  "EndYear": "1453",
   "Name": "Hundred Years War",
   "Armies": ["English Army", "French Army"],
   "MajorEvents": ["Battle of Crécy", "Battle of Poitiers", "Battle of Agincourt", "Siege of Orléans", "Battle of Castillon"]
 },
 {
-  "StartYear": 1803,
-  "EndYear": 1815,
+  "StartYear": "1803",
+  "EndYear": "1815",
   "Name": "Napoleonic Wars",
   "Armies": ["French Grande Armée", "Coalition Forces"],
   "MajorEvents": ["Battle of Marengo", "Battle of Austerlitz", "Battle of Jena", "Battle of Waterloo"]
 },
 {
-  "StartYear": 1861,
-  "EndYear": 1865,
+  "StartYear": "1861",
+  "EndYear": "1865",
   "Name": "American Civil War",
   "Armies": ["Union Army", "Confederate Army"],
   "MajorEvents": ["Battle of Gettysburg", "Battle of Vicksburg", "Siege of Petersburg"]
 },
 {
-  "StartYear": 1939,
-  "EndYear": 1945,
+  "StartYear": "1939",
+  "EndYear": "1945",
   "Name": "World War 2",
   "Armies": ["Allied Forces", "Axis Powers"],
   "MajorEvents": ["Invasion of Poland", "Battle of Britain", "D-Day Landing", "Battle of Stalingrad"]
 },
 {
-  "StartYear": 2003,
-  "EndYear": 2011,
+  "StartYear": "2003",
+  "EndYear": "2011",
   "Name": "Iraq War",
   "Armies": ["US Army", "Iraq insurgents"],
   "MajorEvents": ["Invasion of Iraq", "Battle of Fallujah", "Capture of Saddam Hussein"]
