@@ -2,43 +2,43 @@ const wars = [
  {
   "StartYear": "334",
   "EndYear": "330",
-  "Name": "Invasion of Persia",
-  "Army": ["Macedonian Army", "Persian Army"],
+  "Conflict": "Invasion of Persia",
+  "Army": { "Side1": ["Macedonian Army"], "Side2": ["Persian Army"] },
   "MajorEvents": ["Battle of Granicus", "Battle of Issus", "Siege of Tyre", "Battle of Gaugamela", "Pursuit of Darius III"]
 },
 {
   "StartYear": "1337",
   "EndYear": "1453",
-  "Name": "Hundred Years War",
-  "Army": ["English Army", "French Army"],
+  "Conflict": "Hundred Years War",
+  "Army": { "Side1": ["English Army"], "Side2": ["French Army"]},
   "MajorEvents": ["Battle of Crécy", "Battle of Poitiers", "Battle of Agincourt", "Siege of Orléans", "Battle of Castillon"]
 },
 {
   "StartYear": "1803",
   "EndYear": "1815",
-  "Name": "Napoleonic Wars",
-  "Army": ["French Grande Armée", ],
+  "Conflict": "Napoleonic Wars",
+  "Army": { "Side1": ["French Grande Armée"], "Coalition Forces": ["English Army"] },
   "MajorEvents": ["Battle of Marengo", "Battle of Austerlitz", "Battle of Jena", "Battle of Waterloo"]
 },
 {
   "StartYear": "1861",
   "EndYear": "1865",
-  "Name": "American Civil War",
-  "Army": ["Union Army", "Confederate Army"],
+  "Conflict": "American Civil War",
+  "Army": { "Side1": ["Union Army"], "Side2": ["Confederate Army"] },
   "MajorEvents": ["Battle of Gettysburg", "Battle of Vicksburg", "Siege of Petersburg"]
 },
 {
   "StartYear": "1939",
   "EndYear": "1945",
-  "Name": "World War 2",
-  "Army": ["US Army", "German Army"],
+  "Conflict": "World War 2",
+  "Army": { "Allies": ["US Army"], "Axis": ["German Army"] },
   "MajorEvents": ["Invasion of Poland", "Battle of Britain", "D-Day Landing", "Battle of Stalingrad"]
 },
 {
   "StartYear": "2003",
-  "EndYear": "2011",
-  "Name": "Iraq War",
-  "Army": ["US Army", "Iraq insurgents"],
+  "": "2011",
+  "Conflict": "Iraq War",
+  "Army": { "Side1": ["US Army"], "Side2": ["Iraq insurgents"] },
   "MajorEvents": ["Invasion of Iraq", "Battle of Fallujah", "Capture of Saddam Hussein"]
 }
 ]
@@ -48,7 +48,7 @@ const roles = ["Infantry", "Cavalry", "Artillery", "Scout", "Engineer"]
 
 const names = ["Thomas", "Darius", "Emile", "Jakob", "Remy", "Aurelio", "John", "Marcus",]
 
-//name pool for each war era
+//name pool for each war era[]
 
 //Invasion of Persia names
 const macedonianNames = ["Demetrios", "Nikandros", "Diodoros", "Andronikos", "Philotas", "Nikandria", "Diogeneas", "Zenon", "Menon", "Aristion", "Dionysios", "Demetrios", "Apollonios", "Alexander", "Theodore", "Philon", "Ariston", "Amyntas", "Kleon", "Herakleides"]
