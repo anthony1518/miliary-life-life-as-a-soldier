@@ -3,28 +3,28 @@ const wars = [
   "StartYear": "334",
   "EndYear": "330",
   "Conflict": "Invasion of Persia",
-  "Army": { "Side1": ["Macedonian Army"], "Side2": ["Persian Army"] },
+  "Army": { "Macedeon": ["Macedonian Army"], "Persia": ["Persian Army"] },
   "MajorEvents": ["Battle of Granicus", "Battle of Issus", "Siege of Tyre", "Battle of Gaugamela", "Pursuit of Darius III"]
 },
 {
   "StartYear": "1337",
   "EndYear": "1453",
   "Conflict": "Hundred Years War",
-  "Army": { "Side1": ["English Army"], "Side2": ["French Army"]},
+  "Army": { "England": ["English Army"], "France": ["French Army"]},
   "MajorEvents": ["Battle of Crécy", "Battle of Poitiers", "Battle of Agincourt", "Siege of Orléans", "Battle of Castillon"]
 },
 {
   "StartYear": "1803",
   "EndYear": "1815",
   "Conflict": "Napoleonic Wars",
-  "Army": { "Side1": ["French Grande Armée"], "Coalition Forces": ["English Army"] },
+  "Army": { "France": ["French Grande Armée"], "Coalition Forces": ["English Army"] },
   "MajorEvents": ["Battle of Marengo", "Battle of Austerlitz", "Battle of Jena", "Battle of Waterloo"]
 },
 {
   "StartYear": "1861",
   "EndYear": "1865",
   "Conflict": "American Civil War",
-  "Army": { "Side1": ["Union Army"], "Side2": ["Confederate Army"] },
+  "Army": { "US North": ["Union Army"], "US South": ["Confederate Army"] },
   "MajorEvents": ["Battle of Gettysburg", "Battle of Vicksburg", "Siege of Petersburg"]
 },
 {
@@ -38,7 +38,7 @@ const wars = [
   "StartYear": "2003",
   "EndYear": "2011",
   "Conflict": "Iraq War",
-  "Army": { "Side1": ["US Army"], "Side2": ["Iraq insurgents"] },
+  "Army": { "US Coalition": ["US Army"], "Iraq": ["Iraq insurgents"] },
   "MajorEvents": ["Invasion of Iraq", "Battle of Fallujah", "Capture of Saddam Hussein"]
 }
 ]
