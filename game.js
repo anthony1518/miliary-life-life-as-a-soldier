@@ -73,28 +73,31 @@ const USASouthernnames = [... USASouthernwhitenames, ... Civilwarblacknames]
 const Iraqnames = ["Ahmed","Ali","Hassan","Omar","Yusuf","Abdullah","Khalid","Faisal","Zaid",]
 
 const war = wars[Math.floor(Math.random() * wars.length)]
+const sides = Object.keys(war.Army)
+const randomSide = sides[Math.floor(Math.random() * sides.length)]
+const army = war.Army[randomSide][0]
 const role = roles[Math.floor(Math.random() * roles.length)]
 let namePool = names
 
-if (war.Army === "Macedonian Army") {
+if (army === "Macedonian Army") {
     namePool = macedonianNames
-} else if (war.Army === "Persian Army") {
+} else if (army === "Persian Army") {
     namePool = persianNames 
-}  else if (war.Army === "English Army") {
+}  else if (army === "English Army") {
     namePool = Englandnames
-} else if (war.Army === "French Army") {
+} else if (army === "French Army") {
     namePool = Frenchnames
-} else if (war.Army === "French Grande Armée") {
+} else if (army === "French Grande Armée") {
     namePool = Frenchnames
-}   else if (war.Army === "Union Army") {
+}   else if (army === "Union Army") {
     namePool = USUnionnames
-} else if (war.Army === "Confederate Army") {
+} else if (army === "Confederate Army") {
     namePool = USASouthernnames
-} else if (war.Army === "US Army") {
+} else if (army === "US Army") {
     namePool = USAnames
-} else if (war.Army === "German Army") {
+} else if (army === "German Army") {
     namePool = Germanames
-} else if (war.Army === "Iraq insurgents") {
+} else if (army === "Iraq insurgents") {
     namePool = Iraqnames
 }
 // soldier
@@ -112,7 +115,7 @@ const soldier = {
 document.getElementById("game").innerHTML = `
     <h2>${soldier.name}</h2>
     <p>${war.StartYear} — ${war.Conflict}</p>
-    <p>Army: ${war.Army}</p>
+    <p>Army: ${army}</p>
     <p>Role: ${soldier.role}</p>
     <hr>
     <p>Health: ${soldier.health}</p>
