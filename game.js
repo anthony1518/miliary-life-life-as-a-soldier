@@ -36,7 +36,7 @@ const wars = [
 },
 {
   "StartYear": "2003",
-  "": "2011",
+  "EndYear": "2011",
   "Conflict": "Iraq War",
   "Army": { "Side1": ["US Army"], "Side2": ["Iraq insurgents"] },
   "MajorEvents": ["Invasion of Iraq", "Battle of Fallujah", "Capture of Saddam Hussein"]
@@ -110,8 +110,8 @@ const soldier = {
 // actual ui
 
 document.getElementById("game").innerHTML = `
-    <h2>${soldier.name}</h2>b
-    <p>${war.year} — ${war.conflict}</p>
+    <h2>${soldier.name}</h2>
+    <p>${war.StartYear} — ${war.Conflict}</p>
     <p>Army: ${war.Army}</p>
     <p>Role: ${soldier.role}</p>
     <hr>
