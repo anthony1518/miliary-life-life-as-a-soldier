@@ -108,9 +108,9 @@ const soldier = {
 // actual ui
 
 document.getElementById("game").innerHTML = `
-    <h2>${soldier.name}</h2>
-    <p>${wars.year} — ${wars.conflict}</p>
-    <p>Army: ${wars.army}</p>
+    <h2>${soldier.name}</h2>b
+    <p>${war.year} — ${war.conflict}</p>
+    <p>Army: ${war.Army}</p>
     <p>Role: ${soldier.role}</p>
     <hr>
     <p>Health: ${soldier.health}</p>
