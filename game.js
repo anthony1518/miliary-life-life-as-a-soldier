@@ -17,7 +17,7 @@ const wars = [
   "StartYear": "1803",
   "EndYear": "1815",
   "Name": "Napoleonic Wars",
-  "Army": ["French Grande Armée", "Coalition Forces"],
+  "Army": ["French Grande Armée", ],
   "MajorEvents": ["Battle of Marengo", "Battle of Austerlitz", "Battle of Jena", "Battle of Waterloo"]
 },
 {
@@ -31,7 +31,7 @@ const wars = [
   "StartYear": "1939",
   "EndYear": "1945",
   "Name": "World War 2",
-  "Army": ["Allied Forces", "Axis Powers"],
+  "Army": ["US Army", "German Army"],
   "MajorEvents": ["Invasion of Poland", "Battle of Britain", "D-Day Landing", "Battle of Stalingrad"]
 },
 {
@@ -82,6 +82,8 @@ if (war.Army === "Macedonian Army") {
     namePool = persianNames 
 }  else if (war.Army === "English Army") {
     namePool = Englandnames
+} else if (war.Army === "French Army") {
+    namePool = Frenchnames
 } else if (war.Army === "French Grande Armée") {
     namePool = Frenchnames
 }   else if (war.Army === "Union Army") {
