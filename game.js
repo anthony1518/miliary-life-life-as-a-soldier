@@ -5,6 +5,7 @@ const wars = [
   "Conflict": "Invasion of Persia",
   "Army": { "Macedon": ["Macedonian Army"], "Persia": ["Persian Army"] },
   "MajorEvents": ["Battle of Granicus", "Battle of Issus", "Siege of Tyre", "Battle of Gaugamela", "Pursuit of Darius III"]
+
 },
 {
   "StartYear": "1337",
@@ -43,8 +44,16 @@ const wars = [
 }
 ]
 
+//ROle pools
+const MacedonRoles = ["Phalanx", "elite spearmen", "Scout calvary", "Archers", "Hetairoi Calvary", "Slinger", "peltast", "agema", "hypaspist", "companion cavalry", "foot companion", "thureophoroi", "light infantry"]
+const PersianRoles = ["Immortals", "Sparabara", "Cavalry", "Archers", "Charioteers", "Slingers", "Peltasts", "Navy Sailors"]
+const EnglandRoles = ["Knight", "Chevalier Bachelor", "Armiger", "Serjeant-at-arm", "Archier à Cheval (Mounted Archer)", "Archier à Pied (Foot Archer)",
+     "Vintener", "Billman", "Glaiveman", "Lancearii", "Pavisier", "Hobelar", "Coureur"]
+const FrenchRoles = ["Knight", "Foot soldier", "Crossbowman", "Pikeman", "Swordsman", "Archer"]
+const GrandeArméeRoles = ["Infantry", "Cavalry", "Artillery", "Engineer", "Medic"]
+const UnionRoles = ["Infantryman", "Cavalryman", "Artilleryman", "Engineer", "Medic"]
+const ConfederateRoles = ["Infantryman", "Cavalryman", "Artilleryman", "Engineer", "Medic"]
 
-const roles = ["Infantry", "Cavalry", "Artillery", "Scout", "Engineer"]
 
 
 //name pool for each war era[]
@@ -77,7 +86,7 @@ const sides = Object.keys(war.Army)
 const randomSide = sides[Math.floor(Math.random() * sides.length)]
 const army = war.Army[randomSide][0]
 const role = roles[Math.floor(Math.random() * roles.length)]
-let namePool = names = []
+let namePool = []
 
 if (army === "Macedonian Army") {
     namePool = macedonianNames
