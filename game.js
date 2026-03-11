@@ -3,7 +3,7 @@ const wars = [
   "StartYear": "334",
   "EndYear": "330",
   "Conflict": "Invasion of Persia",
-  "Army": { "Macedeon": ["Macedonian Army"], "Persia": ["Persian Army"] },
+  "Army": { "Macedon": ["Macedonian Army"], "Persia": ["Persian Army"] },
   "MajorEvents": ["Battle of Granicus", "Battle of Issus", "Siege of Tyre", "Battle of Gaugamela", "Pursuit of Darius III"]
 },
 {
@@ -77,7 +77,7 @@ const sides = Object.keys(war.Army)
 const randomSide = sides[Math.floor(Math.random() * sides.length)]
 const army = war.Army[randomSide][0]
 const role = roles[Math.floor(Math.random() * roles.length)]
-let namePool = names
+let namePool = names = []
 
 if (army === "Macedonian Army") {
     namePool = macedonianNames
