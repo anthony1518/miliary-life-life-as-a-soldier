@@ -46,7 +46,6 @@ const wars = [
 
 const roles = ["Infantry", "Cavalry", "Artillery", "Scout", "Engineer"]
 
-const names = ["Thomas", "Darius", "Emile", "Jakob", "Remy", "Aurelio", "John", "Marcus",]
 
 //name pool for each war era[]
 
@@ -71,6 +70,7 @@ const USASouthernnames = [... USASouthernwhitenames, ... Civilwarblacknames]
 
 
 const Iraqnames = ["Ahmed","Ali","Hassan","Omar","Yusuf","Abdullah","Khalid","Faisal","Zaid",]
+
 
 const war = wars[Math.floor(Math.random() * wars.length)]
 const sides = Object.keys(war.Army)
