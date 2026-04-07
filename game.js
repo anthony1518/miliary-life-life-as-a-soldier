@@ -47,13 +47,13 @@ const wars = [
 //ROle pools
 const MacedonRoles = ["Phalanx", "elite spearmen", "Scout calvary", "Archers", "Hetairoi Calvary", "Slinger", "peltast", "agema", "hypaspist", "companion cavalry", "foot companion", "thureophoroi", "light infantry"]
 const PersianRoles = ["Immortals", "Sparabara", "Cavalry", "Archers", "Charioteers", "Slingers", "Peltasts", "Navy Sailors"]
-const EnglandRoles = ["Knight", "Chevalier Bachelor", "Armiger", "Serjeant-at-arm", "Archier à Cheval (Mounted Archer)", "Archier à Pied (Foot Archer)",
-     "Vintener", "Billman", "Glaiveman", "Lancearii", "Pavisier", "Hobelar", "Coureur"]
-const FrenchRoles = ["Knight", "Foot soldier", "Crossbowman", "Pikeman", "Swordsman", "Archer"]
-const GrandeArméeRoles = ["Infantry", "Cavalry", "Artillery", "Engineer", "Medic"]
-const UnionRoles = ["Infantryman", "Cavalryman", "Artilleryman", "Engineer", "Medic"]
-const ConfederateRoles = ["Infantryman", "Cavalryman", "Artilleryman", "Engineer", "Medic"]
-
+const EnglandRoles = ["Knight", "Man-at-Arms", "Billman", "Glaiveman", "Archer", "Lancearii", "Pavisier", "Mounted Archer", "Hobelar", "Coureur", "Master Gunner", "Master of Trebuchet", "Bombardier", "Siege Engineer", "Sapper", "Physician", "Surgeon", "Apothecary", "Military Barber"]
+const FrenchRoles = ["Chevalier", "Homme d'Armes", "Piquiers", "Arbalétrier", "Halbardier", "Archer français", "Homme d'Armes à Cheval", "Archer à Cheval", "Écuyer", "Coureur", "Maître Canonnier", "Maître de Trébuchet", "Bombardier", "Poudrier", "Ingénieur de Siège", "Sapeur", "Maçon Militaire", "Médecin", "Chirurgien", "Apothicaire", "Barbier Militaire"]
+const GrandeArméeRoles = ["Grenadier-à-pied", "Carabinier-à-pied", "Voltigeur", "Tirailleur", "Chasseur-à-pied", "Fusilier", "Flanqueur", "Sapeur", "Sapeur-mineur", "Cuirassier", "Carabinier à cheval", "Grenadier à cheval", "Hussard", "Chasseur-à-cheval", "Dragoon", "Lancier", "Gendarme", "Canonnier", "Bombardier", "Pointeur", "Servant de pièce", "Matrosses", "Sapeur-pontonnier", "Officier du génie", "Chirurgien-major", "Chirurgien", "Infirmier", "Maréchal des logis", "Vivandière", "Tambour-major", "Trompette", "Tambour", "Estafette", "Éclaireur"]
+const UnionRoles = ["Private", "Drummer Boy", "Bugler", "Corporal", "Sergeant", "First Sergeant", "Sergeant Major", "Color Bearer", "Skirmisher", "Cavalry Trooper", "Cavalry Scout", "Dragoon", "Vedette", "Cannoneer", "Gun Captain", "Powder Monkey", "Battery Commander", "Military Engineer", "Combat Engineer", "Topographical Engineer", "Surgeon", "Assistant Surgeon", "Ambulance Attendant", "Hospital Steward", "Quartermaster Sergeant", "Courier", "Cook", "Blacksmith"]
+const ConfederateRoles = ["Private", "Drummer", "Bugler", "Corporal", "Sergeant", "First Sergeant", "Sergeant Major", "Color Sergeant", "Skirmish Ranger", "Sharpshooter", "Cavalry Trooper", "Mounted Rifleman", "Picket", "Cavalry Scout", "Cannoneer", "Sponger", "Limber Gunner", "Chief of Piece", "Pioneer", "Military Engineer", "Bridge Builder", "Surgeon", "Medical Assistant", "Litter Bearer", "Hospital Steward", "Quartermaster Sergeant", "Courier", "Cook", "Blacksmith"]
+const IraqRoles = ["Infantry", "Sniper", "IED Specialist"]
+const USRoles = ["Private", "Corporal", "Sergeant", "Lieutenant", "Captain", "Major", "Colonel", "General", "Special Forces Operator", "Rifleman", "Machine Gunner", "Grenadier", "Combat Engineer", "Medic", "Intelligence Analyst", "Logistics Specialist"]
 
 
 //name pool for each war era[]
@@ -76,8 +76,6 @@ const USASouthernwhitenames = ["William", "James", "John", "Robert", "Charles", 
 const Civilwarblacknames = ["Frederick", "Langston", "James", "George", "William", "Henry", "Samuel", "Joseph", "Benjamin", "Joshua", "Isaac", "Daniel", "Aaron", "Abraham", "Charles", "Edward", "Marcus", "Lewis", "David", "Jacob", "Peter", "Solomon", "Thomas", "Robert", "Richard"]
 const USUnionnames = [... USAUnionwhitenames, ... Civilwarblacknames]
 const USASouthernnames = [... USASouthernwhitenames, ... Civilwarblacknames]    
-
-
 const Iraqnames = ["Ahmed","Ali","Hassan","Omar","Yusuf","Abdullah","Khalid","Faisal","Zaid",]
 
 
@@ -85,30 +83,42 @@ const war = wars[Math.floor(Math.random() * wars.length)]
 const sides = Object.keys(war.Army)
 const randomSide = sides[Math.floor(Math.random() * sides.length)]
 const army = war.Army[randomSide][0]
-const role = roles[Math.floor(Math.random() * roles.length)]
 let namePool = []
+let rolePool = []
 
 if (army === "Macedonian Army") {
     namePool = macedonianNames
+    rolePool = MacedonRoles
 } else if (army === "Persian Army") {
-    namePool = persianNames 
+    namePool = persianNames
+    rolePool = PersianRoles
 }  else if (army === "English Army") {
     namePool = Englandnames
+    rolePool = EnglandRoles
 } else if (army === "French Army") {
     namePool = Frenchnames
+    rolePool = FrenchRoles
 } else if (army === "French Grande Armée") {
     namePool = Frenchnames
+    rolePool = GrandeArméeRoles
 }   else if (army === "Union Army") {
     namePool = USUnionnames
+    rolePool = UnionRoles
 } else if (army === "Confederate Army") {
     namePool = USASouthernnames
+    rolePool = ConfederateRoles
 } else if (army === "US Army") {
     namePool = USAnames
+    rolePool = USRoles 
 } else if (army === "German Army") {
     namePool = Germanames
+    rolePool = GrandeArméeRoles
 } else if (army === "Iraq insurgents") {
     namePool = Iraqnames
+    rolePool = IraqRoles
 }
+
+const role = rolePool[Math.floor(Math.random() * rolePool.length)]
 // soldier
 const soldier = {
     name: namePool[Math.floor(Math.random() * namePool.length)],
