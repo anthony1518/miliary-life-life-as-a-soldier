@@ -130,15 +130,28 @@ const soldier = {
 }
 
 // actual ui
+function displaySoldier() {
+    const gameDiv = document.getElementById("game");
+    if (gameDiv) {
+        gameDiv.innerHTML = `
+            <h2>${soldier.name}</h2>
+            <p>${war.StartYear} — ${war.Conflict}</p>
+            <p>Army: ${army}</p>
+            <p>Role: ${soldier.role}</p>
+            <hr>
+            <p>Health: ${soldier.health}</p>
+            <p>Morale: ${soldier.morale}</p>
+            <p>Equipment: ${soldier.equipment}</p>
+            <p>Reputation: ${soldier.reputation}</p>
+        `;
+    } else {
+        console.error("Game div not found!");
+    }
+}
 
-document.getElementById("game").innerHTML = `
-    <h2>${soldier.name}</h2>
-    <p>${war.StartYear} — ${war.Conflict}</p>
-    <p>Army: ${army}</p>
-    <p>Role: ${soldier.role}</p>
-    <hr>
-    <p>Health: ${soldier.health}</p>
-    <p>Morale: ${soldier.morale}</p>
-    <p>Equipment: ${soldier.equipment}</p>
-    <p>Reputation: ${soldier.reputation}</p>
-    `;
+// Wait for DOM to be ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', displaySoldier);
+} else {
+    displaySoldier();
+}
