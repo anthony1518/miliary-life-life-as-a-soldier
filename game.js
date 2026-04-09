@@ -54,6 +54,7 @@ const UnionRoles = ["Private", "Drummer Boy", "Bugler", "Corporal", "Sergeant", 
 const ConfederateRoles = ["Private", "Drummer", "Bugler", "Corporal", "Sergeant", "First Sergeant", "Sergeant Major", "Color Sergeant", "Skirmish Ranger", "Sharpshooter", "Cavalry Trooper", "Mounted Rifleman", "Picket", "Cavalry Scout", "Cannoneer", "Sponger", "Limber Gunner", "Chief of Piece", "Pioneer", "Military Engineer", "Bridge Builder", "Surgeon", "Medical Assistant", "Litter Bearer", "Hospital Steward", "Quartermaster Sergeant", "Courier", "Cook", "Blacksmith"]
 const IraqRoles = ["Infantry", "Sniper", "IED Specialist"]
 const USRoles = ["Private", "Corporal", "Sergeant", "Lieutenant", "Captain", "Major", "Colonel", "General", "Special Forces Operator", "Rifleman", "Machine Gunner", "Grenadier", "Combat Engineer", "Medic", "Intelligence Analyst", "Logistics Specialist"]
+const GermanRoles = ["Gefreiter", "Obergefreiter", "Unteroffizier", "Feldwebel", "Oberfeldwebel", "Hauptfeldwebel", "Gewalthaber", "Schütze", "Maschinengewehrschtze", "Panzergrenadier", "Panzerjäger", "Grenadier", "Pionier", "Funksprech", "Sanitäter", "Unterarzt"]
 
 
 //name pool for each war era[]
@@ -112,7 +113,7 @@ if (army === "Macedonian Army") {
     rolePool = USRoles 
 } else if (army === "German Army") {
     namePool = Germanames
-    rolePool = GrandeArméeRoles
+    rolePool = GermanRoles
 } else if (army === "Iraq insurgents") {
     namePool = Iraqnames
     rolePool = IraqRoles
