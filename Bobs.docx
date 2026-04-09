@@ -68,3 +68,30 @@ or canada.
 or the US revolutinary war.
 
 rn im going to clean it up some. 
+
+also things from the Claude chat
+
+HEALTH SYSTEM
+Two layers — DayZ and Tarkov inspired. Not in your bible at all.
+DayZ layer — slow burn campaign deterioration. Hunger, exposure, exhaustion, strength, sickness. They bleed into each other. Starving long enough kills your strength.
+Tarkov layer — immediate battle wounds. Specific body parts. Leg hit means you can't run. Arm hit affects weapon handling. Bleeding needs immediate attention.
+Conditions not numbers. Not "Health: 73" but descriptive physical states. Era aware — same injury has completely different consequences depending on the century.
+
+PLAYER AGENCY
+Not A/B/C choices. The game puts you in a situation and you respond however you want. Free form. The world reacts to what you actually do. This requires AI as the narrator eventually — Groq free tier was the plan.
+
+HOW CAMPAIGNS END
+Death, war ends, serious injury depending on era, dismissal, honorary discharge. If you survive you can start fresh or continue the same character into the next conflict.
+
+CHARACTER PERSISTENCE
+Same soldier carries across multiple campaigns. Accumulates scars, relationships, reputation, trauma, wisdom, age. Eventually too old to fight.
+
+THE STREAMING PROJECT
+Separate project. Personal linear streaming channel. Pulls from Internet Archive and YouTube APIs. Smart shuffle, plays like cable TV, castable to smart TVs. Solves the decision fatigue problem of on demand streaming. Content gap is acknowledged — modern Netflix exclusives aren't accessible. That's a known limitation not a dealbreaker. Goal is proof of concept that demonstrates the problem exists.
+
+SCALING PLAN FOR WARS
+When scaling WW2 — Italy, Free French, Canada as options. US Revolutionary War is a candidate. Structure needs to work like a web not a flat list when factions get complex.
+
+BATTLE DATES
+Not just war start and end dates — actual individual battle dates and times within campaigns. This is in your to do list but not documented as a system yet.
+

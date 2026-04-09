@@ -141,4 +141,4 @@ document.getElementById("game").innerHTML = `
     <p>Morale: ${soldier.morale}</p>
     <p>Equipment: ${soldier.equipment}</p>
     <p>Reputation: ${soldier.reputation}</p>
-    `;
+    `
