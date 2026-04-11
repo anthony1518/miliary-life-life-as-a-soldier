@@ -127,9 +127,9 @@ const soldier = {
     health: 100,
     morale: 75,
     equipment: 100,
-    reputation: 50
+    reputation: 50,
     // Current calendar date
-    year: parseInt(war.StartYear),
+    Year: parseInt(war.StartYear),
     month: Math.floor(Math.random() * 12) + 1,  // 1-12
     day: Math.floor(Math.random() * 28) + 1,    // 1-28
 
@@ -143,8 +143,8 @@ const soldier = {
 
 document.getElementById("game").innerHTML = `
     <h2>${soldier.name}</h2>
-    <p>${soldier.year} BC — ${war.Conflict}</p>
-    <p>Current Date: ${soldier.year}/${soldier.month}/${soldier.day}</p>
+    <p>${soldier.Year} BC — ${war.Conflict}</p>
+    <p>Current Date: ${soldier.Year}/${soldier.month}/${soldier.day}</p>
     <p>Time in Service: ${soldier.serviceYears}y ${soldier.serviceMonths}m ${soldier.serviceDays}d</p>
     <p>Army: ${army}</p>
     <p>Role: ${soldier.role}</p>
