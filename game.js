@@ -101,7 +101,7 @@ if (army === "Macedonian Army") {
     rolePool = FrenchRoles
 } else if (army === "French Grande Armée") {
     namePool = Frenchnames
-    rolePool = GrandeArméeRoles
+    rolePool = GrandeArmeeRoles
 }   else if (army === "Union Army") {
     namePool = USUnionnames
     rolePool = UnionRoles
