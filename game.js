@@ -135,8 +135,8 @@ const soldier = {
 
        // Time in service (how long you’ve been in the army)
     serviceYears: 0,
-    serviceMonths: Math.floor(Math.random() * 6),  // 0-5 months
-    serviceDays: Math.floor(Math.random() * 30)    // 0-29 days
+    serviceMonths: Math.floor(Math.random() * 13),  // 0-12 months
+    serviceDays: Math.floor(Math.random() * 31)    // 0-30 days
 }
 
 // actual ui
