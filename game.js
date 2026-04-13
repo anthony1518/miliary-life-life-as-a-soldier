@@ -154,4 +154,5 @@ document.getElementById("game").innerHTML = `
     <p>Equipment: ${soldier.equipment}</p>
     <p>Reputation: ${soldier.reputation}</p>
 `
+
     
