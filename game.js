@@ -155,4 +155,16 @@ document.getElementById("game").innerHTML = `
     <p>Reputation: ${soldier.reputation}</p>
 `
 
-    
+//Button functions>
+document.getElementById("Advance Time").addEventListener("click", () => {
+    // Advance the calendar date by one day
+    soldier.day += 1
+    if (soldier.day > 28) {
+        soldier.day = 1
+        soldier.month += 1
+        if (soldier.month > 12) {
+            soldier.month = 1
+            soldier.Year += 1
+        }
+    }
+})
