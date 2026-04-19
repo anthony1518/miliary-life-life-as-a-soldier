@@ -154,17 +154,9 @@ document.getElementById("game").innerHTML = `
     <p>Equipment: ${soldier.equipment}</p>
     <p>Reputation: ${soldier.reputation}</p>
 `
-
-//Button functions>
-document.getElementById("Advance Time").addEventListener("click", () => {
-    // Advance the calendar date by one day
-    soldier.day += 1
-    if (soldier.day > 28) {
-        soldier.day = 1
-        soldier.month += 1
-        if (soldier.month > 12) {
-            soldier.month = 1
-            soldier.Year += 1
-        }
-    }
-})
+//button functions
+const myButton = document.getElementById("Generate Soldier");
+function generateSoldier() {
+    // Implementation for generating a new soldier
+}
+myButton.addEventListener("click", generateSoldier);
